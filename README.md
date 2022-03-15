@@ -7,9 +7,9 @@ Example plugin demonstrating how to integrate Tailwind with the [@wordpress/crea
 Clone the repository and install npm packages.
 
 `
-git clone https://github.com/dgwyer/tailwind-blocks.git
-cd tailwind-blocks
-npm i
+    git clone https://github.com/dgwyer/tailwind-blocks.git
+    cd tailwind-blocks
+    npm i
 `
 
 Start the build process in development or do a production build.
