@@ -1,0 +1,38 @@
+{
+	"name": "tailwind-blocks",
+	"version": "0.1.0",
+	"description": "Example static block scaffolded with Create Block tool.",
+	"author": "The WordPress Contributors",
+	"license": "GPL-2.0-or-later",
+	"main": "build/index.js",
+	"scripts": {
+		"start": "npm-run-all -p start1 block1:watch block2:watch block3:watch",
+		"build": "npm-run-all -s build1 block1:build block2:build block3:build",
+		"format": "wp-scripts format",
+		"lint:css": "wp-scripts lint-style",
+		"lint:js": "wp-scripts lint-js",
+		"packages-update": "wp-scripts packages-update",
+		"plugin-zip": "wp-scripts plugin-zip",
+		"start1": "wp-scripts start",
+		"build1": "wp-scripts build",
+		"block1:watch": "wait-on -d 1000 ./build/block1/style-index.css && postcss --config ./config/block1 ./src/block1/tw-style.css -o ./build/block1/style-index.css -w",
+		"block1:build": "wait-on ./build/block1/style-index.css && postcss --config ./config/block1 ./src/block1/tw-style.css -o ./build/block1/style-index.css",
+		"block2:watch": "wait-on -d 1200 ./build/block2/style-index.css && postcss --config ./config/block2 ./src/block2/tw-style.css -o ./build/block2/style-index.css -w",
+		"block2:build": "wait-on ./build/block2/style-index.css && postcss --config ./config/block2 ./src/block2/tw-style.css -o ./build/block2/style-index.css",
+		"block3:watch": "wait-on -d 1400 ./build/block3/style-index.css && postcss --config ./config/block3 ./src/block3/tw-style.css -o ./build/block3/style-index.css -w",
+		"block3:build": "wait-on ./build/block3/style-index.css && postcss --config ./config/block3 ./src/block3/tw-style.css -o ./build/block3/style-index.css"
+	},
+	"devDependencies": {
+		"@wordpress/scripts": "^22.2.1",
+		"autoprefixer": "^10.4.2",
+		"cssnano": "^5.1.4",
+		"npm-run-all": "^4.1.5",
+		"postcss": "^8.4.10",
+		"postcss-cli": "^9.1.0",
+		"postcss-import": "^14.0.2",
+		"tailwindcss": "^3.0.23"
+	},
+	"dependencies": {
+		"wait-on": "^6.0.1"
+	}
+}
