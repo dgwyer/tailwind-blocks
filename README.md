@@ -1,5 +1,5 @@
 # *** Update ***
-This method of integrating Tailwind CSS works but a better method is to integrate Tailwind directly into the build process when creating a block using `npx @wordpress/create-block test`.
+This method of integrating Tailwind CSS works but a better method is to integrate Tailwind directly into the build process when creating a block using `npx @wordpress/create-block test`. More details soon.
 
 # Tailwind Blocks (legacy)
 
