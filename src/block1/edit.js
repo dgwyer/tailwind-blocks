@@ -31,11 +31,8 @@ import './editor.scss';
  */
 export default function Edit() {
 	return (
-		<div {...useBlockProps({ className: ['my-border px-1 py-2'] })}>
-			{ __(
-				'Tailwind Blocks #1 – hello from the editor!',
-				'tailwind-blocks'
-			) }
+		<div {...useBlockProps({ className: 'p-2 rounded-md' })}>
+			{__('Block #1 - Hello from the editor!', 'tailwind-blocks')}
 		</div>
 	);
 }

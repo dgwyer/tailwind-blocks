@@ -12,7 +12,7 @@ import { registerBlockType } from '@wordpress/blocks';
  *
  * @see https://www.npmjs.com/package/@wordpress/scripts#using-css
  */
-import './style.css';
+import './style.scss';
 
 /**
  * Internal dependencies
@@ -25,7 +25,7 @@ import save from './save';
  *
  * @see https://developer.wordpress.org/block-editor/reference-guides/block-api/block-registration/
  */
-registerBlockType( 'create-block/tailwind-blocks-3', {
+registerBlockType('create-block/block3', {
 	/**
 	 * @see ./edit.js
 	 */
@@ -34,4 +34,4 @@ registerBlockType( 'create-block/tailwind-blocks-3', {
 	 * @see ./save.js
 	 */
 	save,
-} );
+});

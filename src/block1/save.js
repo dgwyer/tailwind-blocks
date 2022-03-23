@@ -24,11 +24,11 @@ import { useBlockProps } from '@wordpress/block-editor';
  */
 export default function save() {
 	return (
-		<div {...useBlockProps.save({ className: 'my-border px-3 py-4' })}>
-			{ __(
-				'Tailwind Blocks #1 – hello from the saved content!',
+		<div {...useBlockProps.save({ className: 'p-2 rounded-md' })}>
+			{__(
+				'Block1 - Hello from the saved content!',
 				'tailwind-blocks'
-			) }
+			)}
 		</div>
 	);
 }
