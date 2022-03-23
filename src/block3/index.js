@@ -19,13 +19,16 @@ import './style.scss';
  */
 import Edit from './edit';
 import save from './save';
+import json from './json';
+
+const { name } = json;
 
 /**
  * Every block starts by registering a new block type definition.
  *
  * @see https://developer.wordpress.org/block-editor/reference-guides/block-api/block-registration/
  */
-registerBlockType('create-block/block3', {
+registerBlockType(name, {
 	/**
 	 * @see ./edit.js
 	 */
