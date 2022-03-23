@@ -1,6 +1,8 @@
 # Tailwind Blocks
 
-Example plugin demonstrating how to integrate Tailwind with the [@wordpress/create-block](https://developer.wordpress.org/block-editor/reference-guides/packages/packages-create-block/) script.
+Example plugin demonstrating how to integrate Tailwind with the [`@wordpress/create-block`](https://developer.wordpress.org/block-editor/reference-guides/packages/packages-create-block/) script. The plugin was scaffolded using `@wordpress/create-block` and then Tailwind was manually integrated.
+
+**Coming soon!** Work has started on a custom template that will create a full block plugin with multiple blocks, each one seamlessly integrated with Tailwind right out of the box.
 
 ## Usage
 
