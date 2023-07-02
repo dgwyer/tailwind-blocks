@@ -5,10 +5,10 @@
  * Replace them with your own styles or remove the file completely.
  */
 
-@tailwind components;
-@tailwind utilities;
+ @tailwind base;
+ @tailwind components;
+ @tailwind utilities;
 
-.wp-block-create-block-block3 {
-	background-color: #df1a5c;
-	color: #fff;
+.wp-block-create-block-block1 {
+    @apply bg-purple-800 text-slate-400 border-2 border-green-400 rounded;
 }

@@ -12,14 +12,14 @@ import { registerBlockType } from '@wordpress/blocks';
  *
  * @see https://www.npmjs.com/package/@wordpress/scripts#using-css
  */
-import './style.scss';
+import './style.css';
 
 /**
  * Internal dependencies
  */
 import Edit from './edit';
 import save from './save';
-import json from './json';
+import json from './block.json';
 
 const { name } = json;
 
