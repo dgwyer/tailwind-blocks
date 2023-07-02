@@ -4,6 +4,11 @@
  * Replace them with your own styles or remove the file completely.
  */
 
+ @tailwind base;
+ @tailwind components;
+ @tailwind utilities;
+
 .wp-block-create-block-block2 {
-	border: 2px dotted #f00;
+	/* border: 2px dotted #f00; */
+	@apply border-2 border-dotted border-[#f00];
 }

@@ -5,10 +5,12 @@
  * Replace them with your own styles or remove the file completely.
  */
 
-@tailwind components;
-@tailwind utilities;
+ @tailwind base;
+ @tailwind components;
+ @tailwind utilities;
 
 .wp-block-create-block-block3 {
-	background-color: #df1a5c;
-	color: #fff;
+	/* background-color: #df1a5c;
+	color: #fff; */
+	@apply bg-[#df1a5c] text-white;
 }
